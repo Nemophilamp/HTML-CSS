@@ -16,3 +16,31 @@
 .headline {
   padding: 20px;
 }
+
+main {
+  width: 840px;
+  margin: 50px auto;
+}
+/* ３つ 同じもの, margin だけ３つ*/
+.service1 {
+  margin-bottom: 30px;/* 要素の外側、下に30px　２つ目のアイコンに近い方の数字 */
+  border-bottom: 1px solid #d1d1d1;/* 要素の下に線 */
+  padding-bottom: 30px;  /* 内側、下に30px　webサイトに近い方*/
+}
+
+.service2 {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 30px;
+}
+
+.service3 {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 30px;
+}
+/* margin外側の余白いらない */
+.service4 {
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 30px;
+}
