@@ -79,6 +79,11 @@ main {
   line-height: 0.6;
 }
 
+/* blog-boxクラスに対して上側50pxの余白を適用 */
+.blog-box {
+  padding-top: 50px;
+}
+
 .blog-item {
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -94,6 +99,18 @@ main {
 .blog-image {
   height: 180px; /* 画像が大きいので、180pxに */
 }
+
+/* テキスト部分と画像の距離、上側との距離が近い */
+/* .blog-textに対して、上側25px、左側30pxの余白を適用*/
+.blog-text {
+  padding: 25px 0 0 30px;
+}
+
+/* blog-text-headingクラスに対して下側15pxの余白を適用 */
+.blog-text-heading {
+  padding-bottom: 15px;
+}
+
 
 .blog-date {
   font-size: 12px;
