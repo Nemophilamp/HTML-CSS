@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-visual {
+  height: 400px;
+  width: 100%;
+  background-image: url(img/mv.jpg);
+  background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
+  background-position: bottom;/* 背景画像を下に配置 */
+  /* 写真の上側が映っていて、下側を見せたいから */
+}
+
+.headline {
+  padding: 20px;
+}
