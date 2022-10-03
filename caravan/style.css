@@ -60,7 +60,7 @@ header .heading {
   color: #fff; /* 文字色⇒白 */
 }
 
-.main {
+main {
   width: 800px;
   display: flex; /* Flexboxの利用 */
   justify-content: center; /* 要素の横並び・中央寄せ */
@@ -83,6 +83,37 @@ header .heading {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #f7f7f7;
+  display: flex;
+  justify-content: flex-start;
+  /*画像や文字が横に並んでいない  */
+  /*Flexboxを使って、blog-image, blog-textクラスを横並びにしましょう。*/
+  /* 親要素であるblog-itemクラスに指定をします。 */
+  /* 今回は左揃えにするため、justify-contentプロパティにflex-startを指定します。*/ 
+}
+
+.blog-image {
+  height: 180px; /* 画像が大きいので、180pxに */
+}
+
+.blog-date {
+  font-size: 12px;
+  display: inline-block;
+  /* 日付のフォントが大きい */
+  /* 日付とNatureが横に並んでいない*/
+  /* こちらも横並びにしますが、今回はdisplayを使います。 */
+  /* 値には、block、inline、inline-blockがありましたね。*/
+  /* 今回は横並びにしたいので、inlineまたはinline-blockのどちらかを設定します*/
+  /* ただし、inline-blockのほうが利点が多いので、inline-blockを適用しましょう。*/
+  /* Natureはすでにinline-blockにしているので、blog-dateをinline-blockにしましょう。  */
+}
+
+.category {
+ display: inline-block;
+ padding: 5px 8px;
+ background-color: #acabab;
+ border-radius: 3px;
+ color: #fff;
+ font-size: 11px;
 }
 
 .sidebar {
