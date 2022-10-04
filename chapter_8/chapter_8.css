@@ -9,40 +9,51 @@ main {
   margin: 50px auto;
 }
 
+/* リスト７の下 */
 .item-list {
-
+  margin-bottom: 50px;
 }
 
+/* リストの縦幅20px,文字なし */
 .item {
-
+  padding: 20px;
+  list-style: none;
 }
 
 /* itemの灰色の部分　奇数(odd) 1,3,5,7 */
 .item:nth-child(odd) {
-
+  background-color: #eee;
 }
 
+/* Flexboxでflex-wrapというプロパティ、wrapという値を利用 */
+/*Flexコンテナーの内容の横幅の合計値が、Flexコンテナー自体の横幅を超過する場合の折り返しの方法 */
+/* 9個あるが、3個しか入らないので、折り返し命令 */
 .box-list {
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .box {
-
+  background-color: #ffd700;
+  width: 30%;
+  height: 200px;
+  margin-right: 5%;
+  margin-bottom: 40px;
 }
 
 /* box first,5,last 濃いオレンジ*/
 .box:first-child,
 .box:nth-child(5),
 .box:last-child {
-
+  background-color: #ff8c00;
 }
 
 /* box3個目×n(右の３つ）　外側,右　ぴったり（0） */
 .box:nth-child(3n) {
-
+  margin-right: 0;
 }
 
 /* box　下の段３つ（last含め3つ）-n + 3　外側,下　mainのmargin:50pxにぴったり */
 .box:nth-last-child(-n + 3) {
-
+  margin-bottom: 0;
 }
