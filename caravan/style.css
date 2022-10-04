@@ -137,6 +137,56 @@ main {
   width: 230px;
 }
 
+.common-heading {
+
+}
+
+.sidebar-contents {
+
+}
+
+.popular-text,
+.categories-text {
+
+}
+
+.popular-text:last-child,
+.categories-text:last-child {
+  
+}
+
+.instagram .sidebar-contents {
+
+}
+
+.instagram-box {
+
+}
+
+.instagram-box:nth-child(1) {
+
+}
+
+.instagram-box:nth-child(2) {
+
+}
+
+.instagram-box:nth-child(3) {
+
+}
+
+.instagram-box:nth-child(4) {
+
+}
+
+.instagram-box:nth-child(5) {
+
+}
+
+.instagram-box:nth-child(6) {
+
+}
+
 footer {
   width: 100%;
   height: 120px;
