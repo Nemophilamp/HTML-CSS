@@ -1,0 +1,49 @@
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+
+}
+
+/* header直下のdiv 5コ */
+.header > div {
+
+}
+
+/* headerの 1/5コ、左端firstだけ */
+.header > :first-child {
+
+}
+
+/* sidebarとcontent併せて */
+.main {
+
+}
+
+
+.sidebar {
+
+}
+
+/* でかい緑 */
+.content {
+
+}
+
+/*小さい黄色 9コのdiv  */
+.content > div {
+
+}
+
+.footer {
+
+}
+
+
+.footer > div {
+
+}
