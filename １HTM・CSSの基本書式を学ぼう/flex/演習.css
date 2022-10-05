@@ -6,44 +6,68 @@
 }
 
 .header {
-
+  background-color: #ff00ff;
+  padding: 30px 20px;
+  display: flex; /* 横並び */
+  justify-content: flex-end; /* 最初の要素だけ左揃えで、それ以外は右揃えで横に並べる */
 }
 
 /* header直下のdiv 5コ */
 .header > div {
-
+  background-color: #fbb3ff;
+  flex-basis: 140px; /* Flexアイテムの横幅を指定 */
+  height: 70px;
+  margin: 0 10px;
 }
 
 /* headerの 1/5コ、左端firstだけ */
 .header > :first-child {
-
+ margin-right: auto;
 }
 
 /* sidebarとcontent併せて */
 .main {
-
+  display: flex;
+  justify-content: center;
 }
 
-
 .sidebar {
-
+ background-color: #d8ffb6;
+ width: 300px;
 }
 
 /* でかい緑 */
 .content {
-
+ background-color: #00b522;
+ padding: 20px;
+ max-width: 700px;
+ flex-grow: 1;
+ display: flex; /*Flexコンテナーの内容の横幅の合計値が、Flexコンテナー自体の横幅を超過する場合の折り返しの方法 */
+ flex-wrap: wrap; /* 折り返し命令 */
+ justify-content: center; /* Flexコンテナーの内容の横方向の整列方法を指定 */
 }
+
 
 /*小さい黄色 9コのdiv  */
 .content > div {
-
+ background-color: #fff75a;
+ flex-basis: 200px; /* Flexアイテムの横幅を指定 */
+ height: 130px;
+ margin: 10px;
 }
 
 .footer {
-
+ background-color: #52a1ff;
+ padding: 20px;
+ display: flex; /*Flexコンテナーの内容の横幅の合計値が、Flexコンテナー自体の横幅を超過する場合の折り返しの方法 */
+ flex-wrap: wrap; /* 折り返し命令 */
+ justify-content: center; /* Flexコンテナーの内容の横方向の整列方法を指定 */
 }
 
-
 .footer > div {
-
+ background-color: #b6e7ff;
+ width: 45%;
+ max-width: 600px;
+ height: 40px;
+ margin: 10px;
 }
